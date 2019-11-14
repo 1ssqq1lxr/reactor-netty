@@ -241,7 +241,6 @@ configure(rootProject) { project ->
 	}
 	bnd(
 			"-exportcontents": "!*internal*,*;-noimport:=true",
-			"-nouses": "true",
 			"Import-Package": '!*internal*,!javax.annotation,io.netty.channel.kqueue;resolution:=optional;version="[4.1,5)",*'
 	)
   }
